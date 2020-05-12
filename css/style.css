@@ -1,9 +1,30 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
-  background-repeat: norepeat;
+  background-image: url('../img/fundo.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
   font-family: Arial;
   height: 100vh;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -16,6 +37,13 @@ a:hover {
 
 .menu {
   background-color: #fff;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+.menu a {
+  display: block;
+  padding: 10px 20px;
 }
 
 .menu ul {
@@ -29,6 +57,15 @@ a:hover {
   color: whitesmoke;
 }
 
+.site-title {
+  font-size: 4em;
+}
+
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  width: 180px;
+  height: 180px;
 }
